@@ -2,9 +2,9 @@
 layout:     post
 title:      "MacOS终端配置"
 subtitle:   ""
-date:       2020-12-27 23:30:00
+# date:       2020-12-27 23:30:00
 author:     "mental2008"
-header-img: "img/post-bg-u4.jpg"
+header-style: text
 catalog: true
 tags:
     - 终端配置

@@ -5,6 +5,7 @@ subtitle:   "记香港返深的漫漫长路"
 date:       2020-12-13 18:30:00
 author:     "mental2008"
 header-img: "img/post-bg-u3.jpg"
+hidden: true
 catalog: true
 tags:
     - 生活
