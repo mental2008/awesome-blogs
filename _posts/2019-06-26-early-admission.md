@@ -5,7 +5,7 @@ subtitle:   "港中文提前批面试"
 author:     "mental2008"
 header-style: text
 mathjax: true
-catalog: true
+no-catalog: true
 tags:
     - PhD 面试
 ---
