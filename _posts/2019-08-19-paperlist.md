@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      "AI论文阅读清单"
+title:      "AI 论文阅读清单"
 subtitle:   ""
-date:       2019-08-19 21:00:00
 author:     "mental2008"
-header-img: "img/post-bg-u6.jpg"
+header-style: text
+mathjax: true
 catalog: true
 tags:
-    - 论文阅读
+    - Paper
 ---
 
 ## Basic Techniques
