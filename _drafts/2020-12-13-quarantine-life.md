@@ -34,8 +34,8 @@ tags:
 最后附几张房间的图片，也希望这场疫情能够早日过去，一切回归正常~
 
 
-![](https://raw.githubusercontent.com/mental2008/mental2008.github.io/master/img/post-pic-quarantine-room-1.jpg)
+![](/img/quarantine/post-pic-quarantine-room-1.jpg)
 
-![](https://raw.githubusercontent.com/mental2008/mental2008.github.io/master/img/post-pic-quarantine-room-2.jpg)
+![](/img/quarantine/post-pic-quarantine-room-2.jpg)
 
-![](https://raw.githubusercontent.com/mental2008/mental2008.github.io/master/img/post-pic-quarantine-room-3.jpg)
+![](/img/quarantine/post-pic-quarantine-room-3.jpg)

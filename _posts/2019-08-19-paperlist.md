@@ -7,7 +7,7 @@ header-style: text
 mathjax: true
 catalog: true
 tags:
-    - Paper
+    - Paper Reading
 ---
 
 ## Basic Techniques
