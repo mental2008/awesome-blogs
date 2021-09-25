@@ -788,9 +788,10 @@ samp {
   color: #0085a1;
   text-decoration: none;
 }
-/* .post-container a:focus {
+.post-container a:focus {
   color: #0085a1;
-} */
+  text-decoration: none;
+}
 .post-container h1,
 .post-container h2,
 .post-container h3,
