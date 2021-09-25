@@ -12,7 +12,7 @@ baseurl: ""                             # for example, '/blog' if your blog host
 future: true
 
 # SNS settings
-RSS: false
+RSS: true
 weibo_username:     3614037533
 zhihu_username:     mental2008
 github_username:    mental2008
@@ -59,7 +59,7 @@ kramdown:
 
 
 # Disqus settings
-# disqus_username: mental
+disqus_username: mental2008
 
 # Netease settings
 # netease_comment: false
