@@ -154,12 +154,12 @@ layout: default
         anchors.options = {
           visible: 'hover',
           placement: 'right',
-          // icon: '#'
+          icon: '¶' // options: #, ¶, ❡, and §
         };
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })
 </script>
-<style>
+{% comment %} <style>
     /* place left on bigger screen */
     @media all and (min-width: 800px) {
         .anchorjs-link{
@@ -169,5 +169,5 @@ layout: default
             margin-top : -0.1em;
         }
     }
-</style>
+</style> {% endcomment %}
 {% endif %}

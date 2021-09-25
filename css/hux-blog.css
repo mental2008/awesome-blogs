@@ -779,13 +779,18 @@ samp {
 .post-container a {
   /* color: #337ab7; */
   /* text-decoration: none; */
+  color: inherit;
   border-bottom: 1px solid;
   padding-bottom: 1px;
 }
-.post-container a:hover,
-.post-container a:focus {
+.post-container a:hover {
+  /* color: #f35626; */
   color: #0085a1;
+  text-decoration: none;
 }
+/* .post-container a:focus {
+  color: #0085a1;
+} */
 .post-container h1,
 .post-container h2,
 .post-container h3,
@@ -898,9 +903,12 @@ samp {
   font-weight: normal;
   letter-spacing: 0.5px;
 }
-.post-container .anchorjs-link {
+/* .post-container */
+.anchorjs-link {
   position: absolute;
-  text-decoration: none !important;
+  /* text-decoration: none !important; */
+  border-bottom: 0px !important;
+  padding-bottom: 0px !important;
 }
 @media only screen and (max-width: 767px) {
   /**
@@ -1292,7 +1300,7 @@ samp {
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
   color: #0085a1;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
