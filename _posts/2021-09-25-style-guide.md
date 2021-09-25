@@ -638,7 +638,7 @@ tags:
 
 #### 表达干练
 
-> 现在你看文件越来越厚，但里面包含的信息量越来越少。我们经常在我们开某一次会以后，出个什么文件，然后又组织好多人去辅导。按理说一般有文字阅读能力的人，有知识的人都应该能看明白，但事实上我们没有办法看明白，就因为这文件里包含着好多的词汇，它与它本身的含义是不一样的。by [张维迎](http://scholar.pku.edu.cn/wyzhang/home) 谈语言腐败（[文字稿](https://finance.ifeng.com/news/special/beiyoucai3/) | [YouTube](https://www.youtube.com/watch?v=IbyVoGoQ3qk）
+> 现在你看文件越来越厚，但里面包含的信息量越来越少。我们经常在我们开某一次会以后，出个什么文件，然后又组织好多人去辅导。按理说一般有文字阅读能力的人，有知识的人都应该能看明白，但事实上我们没有办法看明白，就因为这文件里包含着好多的词汇，它与它本身的含义是不一样的。by [张维迎](http://scholar.pku.edu.cn/wyzhang/home) 谈语言腐败（[文字稿](https://finance.ifeng.com/news/special/beiyoucai3/) \| [YouTube](https://www.youtube.com/watch?v=IbyVoGoQ3qk)）
 
 我们崇尚精练的文风。请在检查中把对表达意思没有明显作用的字、词、句删除，在不影响表达效果的前提下把文案长度减到最短。
 

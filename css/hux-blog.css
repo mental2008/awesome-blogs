@@ -707,7 +707,7 @@ article {
 }
 blockquote {
   color: gray;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 0.95em;
   margin: 20px 0 20px;
 }
@@ -777,7 +777,10 @@ samp {
   margin-bottom: 15px;
 }
 .post-container a {
-  color: #337ab7;
+  /* color: #337ab7; */
+  /* text-decoration: none; */
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
 }
 .post-container a:hover,
 .post-container a:focus {
