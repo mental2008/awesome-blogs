@@ -743,12 +743,12 @@ IOC（International Olympic Committee，国际奥林匹克委员会）。这样�
 
 * 文档的文件名不得含有空格。
 * 文件名建议只使用小写字母，不使用大写字母（可以提高打字速度）。
-  * ❌ <u>TroubleShooting.md</u>
-  * ✔️ <u>troubleshooting.md</u>
-  * 📝 为了醒目，某些说明文件的文件名，可以使用大写字母，比如README、LICENSE。
+  * ❌ TroubleShooting.md
+  * ✔️ troubleshooting.md
+  * 📝 为了醒目，某些说明文件的文件名，可以使用大写字母，比如 README、LICENSE。
 * 文件名包含多个单词时，单词之间建议使用半角的连字符（-）分隔。
-  * ❌ <u>advanced_usage.md</u>
-  * ✔️ <u>advanced-usage.md</u>
+  * ❌ advanced_usage.md
+  * ✔️ advanced-usage.md
 
 > [为什么文件名要小写？by 阮一峰](https://www.ruanyifeng.com/blog/2017/02/filename-should-be-lowercase.html)
 
