@@ -5,7 +5,7 @@ header-img: img/background.jpg
 email: mental2008@163.com
 description: "ACMer/SCUTer"
 keyword: "mental2008"
-url: "https://mental2008.github.io" # your host, for absolute URL
+url: "https://blog.yanglingyun.me" # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
