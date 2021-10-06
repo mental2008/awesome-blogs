@@ -7,7 +7,7 @@ header-style: text
 mathjax: true
 catalog: true
 tags:
-    - Paper Reading
+    - 论文阅读
 ---
 
 ## Basic Techniques
