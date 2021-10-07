@@ -15,8 +15,6 @@ tags:
 
 这里分享下我在 macOS 系统上的终端配置方案。
 
-
-
 ## Prerequisite
 
 ### 安装 [Homebrew](https://github.com/Homebrew)
@@ -29,23 +27,17 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 $ brew -v
 ```
 
-
-
 ### 安装 [Wget](https://www.gnu.org/software/wget/)
 
 ```bash
 $ brew install wget
 ```
 
-
-
 ## [iTerm2](https://iterm2.com)
 
 GitHub repo: [https://github.com/gnachman/iTerm2](https://github.com/gnachman/iTerm2)
 
 iTerm2 用于替代 macOS 原生的 terminal，提供了更多特性。
-
-
 
 ### 常用功能/设置
 
@@ -54,8 +46,6 @@ iTerm2 用于替代 macOS 原生的 terminal，提供了更多特性。
 * 通过 `command + d` 新建水平方向的窗口，`command + shift + d` 新建垂直方向的窗口。
 
 * 通过 `command + [` 和 `command + ]` 进行各窗口间的切换。
-
-
 
 **使用 option + Right/Left Arrow 进行 word 的左右跳转**
 
@@ -68,13 +58,9 @@ iTerm2 用于替代 macOS 原生的 terminal，提供了更多特性。
 
 参考问题：[Using Alt/Cmd + Right/Left Arrow in iTerm](https://apple.stackexchange.com/questions/136928/using-alt-cmd-right-left-arrow-in-iterm)
 
-
-
 **在新建 Tab 的时候保留当前的路径**
 
 「Preference」 => 「Profiles」 => 「General」 => 「Working Directory」 => 「Reuse previous session's directory」
-
-
 
 ## [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
@@ -83,8 +69,6 @@ iTerm2 用于替代 macOS 原生的 terminal，提供了更多特性。
 ```bash
 $ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
-
-
 
 ### [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
@@ -99,13 +83,9 @@ $ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powe
 ZSH_THEME=powerlevel10k/powerlevel10k
 ```
 
-
-
 ### 安装字体
 
 下载并安装 [Hack Nerd Font](https://www.nerdfonts.com/font-downloads) （也可以选择一个自己偏好的字体），同时对终端配置进行修改：「Preferences」 => 「Profiles」 => 「Text」 => 「Font」
-
-
 
 ### 配置 powerlevel10k
 
@@ -134,8 +114,6 @@ $ p10k configure
 终端的预览效果如下：
 
 ![](/img/macos-terminal/terminal.png)
-
-
 
 ### 插件
 
@@ -199,10 +177,7 @@ $ brew install exa
 alias ls="exa"
 ```
 
-
-
 ## 参考资料
 
 - [用「zsh」「oh my zsh」「powerlevel10k」，打造属于你的终端环境](https://www.jianshu.com/p/7162c4b7a438)
 - [MacOS 终端工具、插件推荐](https://www.jianshu.com/p/c9040b4321ae)
-

@@ -40,7 +40,8 @@ plugins:
 
 # feed
 feed:
-  path: atom.xml
+  path: feed.xml
+  posts_limit: 19270817 # unlimited
 
 # Markdown settings
 # replace redcarpet to kramdown,
@@ -55,8 +56,6 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-
-
 
 # Disqus settings
 disqus_username: mental2008
