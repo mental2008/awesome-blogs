@@ -20,8 +20,6 @@ twitter_username:   stephenyang1999
 facebook_username:  100015012043418
 linkedin_username:  lingyun-yang-b2881b18a
 
-
-
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
@@ -32,15 +30,17 @@ anchorjs: true # if you want to customize anchor. check out line:181 of `post.ht
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 timezone: CN  
 
-
-
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 # make sure you have this gem installed
 # `$ gem install jekyll-paginate`
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
 
-
+# feed
+feed:
+  path: atom.xml
 
 # Markdown settings
 # replace redcarpet to kramdown,
@@ -64,8 +64,6 @@ disqus_username: mental2008
 # Netease settings
 # netease_comment: false
 
-
-
 # Analytics settings
 # Baidu Analytics 
 # ba_track_id: [your track id]
@@ -74,31 +72,21 @@ disqus_username: mental2008
 # ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 # ga_domain: mental2008
 
-
-
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Winter is coming<br>一如既往，万事胜意"
 sidebar-avatar: /img/tohsaka_rin.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
-
-
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-
-
 # MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
-
-
+page-mathjax: true
 
 # Friends
 friends: [
