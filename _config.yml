@@ -58,7 +58,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: mental2008
+# disqus_username: mental2008
 
 # Netease settings
 # netease_comment: false
