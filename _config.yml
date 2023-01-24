@@ -68,8 +68,7 @@ disqus_username: mental2008
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-219321176-1'            # Format: UA-xxxxxx-xx
-ga_domain: blog.yanglingyun.me
+ga_track_id: 'G-8YVSXN5NVF'
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
