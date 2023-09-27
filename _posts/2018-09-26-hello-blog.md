@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Hello World"
-subtitle: " \"Hello World, Hello Blog\""
+subtitle: "“Hello World, Hello Blog”"
 author: "mental2008"
 header-style: text
-mathjax: true
-catalog: true
+mathjax: false
+# catalog: true
+no-catalog: true
 tags:
     - 生活
 ---
@@ -25,5 +26,3 @@ tags:
 当然啦，其实搭建博客的方式并不重要，重要的是博客的内容。
 
 关于这个博客，我希望能记录一些技术向的东西以及日常生活的一些吐槽吧，就从今天开始吧。
-
-> 2018-09-26

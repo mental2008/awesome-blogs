@@ -2,7 +2,7 @@
 
 Hi，欢迎来到我的个人博客 ;-)
 
-我是杨凌云，网络昵称一般为 `mental2008`，目前是香港科技大学计算机系的博士生 ([Academic Profile](https://www.cse.ust.hk/~lyangbk/))，主要的研究兴趣为 MLSys 及大规模 GPU 集群下的资源调度问题。曾就读于华南理工大学、深圳中学。
+我是杨凌云，网络昵称一般为 `mental2008`，目前是香港科技大学计算机系的博士生 ([Academic Profile](https://www.lingyunyang.com/))，主要的研究兴趣为机器学习系统（MLSys）和大规模 GPU 集群下的资源调度问题。曾就读于华南理工大学、深圳中学。
 
 1. 入门级程序员，曾混迹于 ACM 算法竞赛，喜欢尝试各种新鲜前沿的技术。
 

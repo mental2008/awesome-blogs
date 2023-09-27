@@ -6,7 +6,6 @@ date: 2023-04-30 22:00:00
 author: "mental2008"
 header-style: text
 mathjax: false
-no-catalog: false
 tags:
     - 读书笔记
     - 效率

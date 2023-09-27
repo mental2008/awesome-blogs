@@ -17,7 +17,7 @@ tags:
 
 如何写作是一门大学问，有时良好的写作风格比文字本身更能影响读者的体验。转载一篇读过的文案风格指南，推荐给大家阅读。
 
-> 本文转载自 [「庭说」](https://tingtalk.me/style-guide/)，感谢原作者 `Dr_Ting` 的创作。
+> 本文转载自 [「庭说」](https://tingtalk.me/style-guide/)，感谢原作者 Dr_Ting 的创作。
 
 ---
 
