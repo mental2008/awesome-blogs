@@ -5,7 +5,7 @@ subtitle: "读书笔记"
 date: 2024-03-07
 author: "mental2008"
 header-style: text
-mathjax: false
+mathjax: true
 tags:
     - 读书笔记
     - 亲密关系
@@ -222,7 +222,9 @@ tags:
 
 结果 - 比较水平（comparison level，CL） = 满意度；CL 即我们认为自己在与他人的交往中应当得到的结果值。
 
-结果 - $\text{CL}_\text{alt}$ = 依赖度；替代的比较水平（comparison level for alternative，$\text{CL}_\text{alt}$），指的是如果我们抛弃目前的亲密关系，而转投可以选择的更好的伴侣或情景，所能得到的交往结果。
+替代的比较水平（comparison level for alternative，$\text{CL}_\text{alt}$），指的是如果我们抛弃目前的亲密关系，而转投可以选择的更好的伴侣或情景，所能得到的交往结果。
+
+结果 - $\text{CL}_\text{alt}$ = 依赖度。
 
 > 社会交换的三个重要因素是人们关系的结果、比较水平（CL）和替代的比较水平（$\text{CL}_\text{alt}$）。
 
