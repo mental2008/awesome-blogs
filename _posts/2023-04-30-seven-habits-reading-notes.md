@@ -2,7 +2,7 @@
 layout: post
 title: "《高效能人士的七个习惯》"
 subtitle: "读书笔记"
-date: 2023-04-30 22:00:00
+date: 2023-04-30 22:00:00 +0800
 author: "mental2008"
 header-style: text
 mathjax: false

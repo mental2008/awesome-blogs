@@ -2,7 +2,7 @@
 layout: post
 title: "《芒格之道：查理·芒格股东会讲话 1987-2022》"
 subtitle: "读书笔记"
-date: 2024-07-09
+date: 2024-07-09 20:03:33 +0800
 author: "mental2008"
 header-style: text
 mathjax: true

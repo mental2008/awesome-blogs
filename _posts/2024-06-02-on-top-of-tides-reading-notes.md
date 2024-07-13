@@ -2,7 +2,7 @@
 layout: post
 title: "《浪潮之巅》"
 subtitle: "读书笔记"
-date: 2024-06-02
+date: 2024-06-02 16:20:00 +0800
 author: "mental2008"
 header-style: text
 mathjax: true

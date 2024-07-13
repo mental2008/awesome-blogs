@@ -2,7 +2,7 @@
 layout: post
 title: "《史蒂夫·乔布斯传》"
 subtitle: "读书笔记"
-date: 2024-07-13 21:50:00
+date: 2024-07-13 21:54:12 +0800
 author: "mental2008"
 header-style: text
 mathjax: true

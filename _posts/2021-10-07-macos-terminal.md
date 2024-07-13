@@ -2,7 +2,7 @@
 layout: post
 title: "macOS 终端配置"
 subtitle: "iTerm2 + Oh My Zsh + Powerlevel10k"
-date: 2021-10-07 00:45:00
+date: 2021-10-07 00:45:00 +0800
 author: "mental2008"
 header-style: text
 mathjax: true
