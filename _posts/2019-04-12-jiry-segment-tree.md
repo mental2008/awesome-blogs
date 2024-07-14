@@ -9,6 +9,7 @@ catalog: true
 tags:
     - ACM
     - 数据结构
+    - 线段树
 ---
 
 ## Description

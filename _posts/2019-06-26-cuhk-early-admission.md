@@ -7,7 +7,7 @@ header-style: text
 mathjax: true
 no-catalog: true
 tags:
-    - PhD 面试
+    - PhD admission
 ---
 
 大概四月份就在官网填了 early admission 的申请，不过在第二轮才收到了面试邀请……
