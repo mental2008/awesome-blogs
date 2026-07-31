@@ -2,7 +2,9 @@
 
 Hi，欢迎来到我的个人博客 ;-)
 
-我是杨凌云，网络昵称一般为 `mental2008`，目前是香港科技大学计算机系的博士生 ([Academic Profile](https://www.lingyunyang.com/))，主要的研究兴趣为机器学习系统（MLSys）和大规模 GPU 集群下的资源调度问题。曾就读于华南理工大学、深圳中学。
+我是杨凌云，网络昵称一般为 `mental2008`，目前在阿里巴巴集团从事 AI 基础设施相关工作（[Academic Profile](https://www.lingyunyang.com/)）。曾就读于香港科技大学、华南理工大学和深圳中学。
+
+目前主要关注 Agentic AI Infrastructure，包括围绕 Agent-native 抽象重构基础设施，以及利用 Agent 优化异构 GPU 集群的资源使用效率。
 
 <!-- 1. 编程发烧友，曾混迹于 ACM 算法竞赛，喜欢尝试各种新鲜前沿的技术。 -->
 
