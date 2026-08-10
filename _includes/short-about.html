@@ -1,12 +1,16 @@
 <section class="visible-md visible-lg">
+  {% assign current_lang = page.lang | default: 'zh' %}
+  {% assign strings = site.data.i18n[current_lang] %}
   <hr>
-  <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+  <h5><a href="{% if current_lang == 'en' %}{{ '/en/about/' | prepend: site.baseurl }}{% else %}{{ '/about/' | prepend: site.baseurl }}{% endif %}">{{ strings.about_me }}</a></h5>
   <div class="short-about">
     {% if site.sidebar-avatar %}
     <img src="{{site.sidebar-avatar}}" />
     {% endif %}
-    {% if site.sidebar-about-description %}
-    <p>{{site.sidebar-about-description}}</p>
+    {% if current_lang == 'en' and site.sidebar-about-description-en %}
+    <p>{{ site.sidebar-about-description-en }}</p>
+    {% elsif site.sidebar-about-description %}
+    <p>{{ site.sidebar-about-description }}</p>
     {% endif %}
     <!-- SNS Link -->
     {% include sns-links.html %}

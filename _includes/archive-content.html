@@ -1,0 +1,68 @@
+{% assign archive_posts = include.posts %}
+{% assign archive_lang = page.lang | default: 'zh' %}
+{% assign strings = site.data.i18n[archive_lang] %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div id="tag_cloud" class="tags tags-sup js-tags">
+        <a class="tag-button--all" data-encode="">
+          {{ strings.show_all }}
+          <sup>{{ archive_posts.size }}</sup>
+        </a>
+
+        {% capture all_tag_names %}
+          {% for article in archive_posts %}
+            {% for tag in article.tags %}{{ tag }}__TAG_SEPARATOR__{% endfor %}
+          {% endfor %}
+        {% endcapture %}
+        {% assign unique_tags = all_tag_names | strip | split: '__TAG_SEPARATOR__' | uniq | sort %}
+        {% for tag in unique_tags %}
+          {% assign clean_tag = tag | strip %}
+          {% if clean_tag != '' %}
+            {% assign tag_count = 0 %}
+            {% for article in archive_posts %}
+              {% if article.tags contains clean_tag %}{% assign tag_count = tag_count | plus: 1 %}{% endif %}
+            {% endfor %}
+            <a data-sort="{{ archive_posts.size | minus: tag_count | prepend: '0000' | slice: -4, 4 }}"
+               data-encode="{{ clean_tag | url_encode }}" class="tag-button"
+               title="{{ clean_tag }}" rel="{{ tag_count }}">
+              {{ clean_tag }} <sup>{{ tag_count }}</sup>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="mini-post-list js-result d-none">
+        {% assign sorted_articles = archive_posts | sort: 'date' | reverse %}
+        {% for article in sorted_articles %}
+          {% assign encoded_tags = '' %}
+          {% for tag in article.tags %}
+            {% assign encoded_tag = tag | strip | url_encode %}
+            {% unless forloop.first %}{% assign encoded_tags = encoded_tags | append: ',' %}{% endunless %}
+            {% assign encoded_tags = encoded_tags | append: encoded_tag %}
+          {% endfor %}
+
+          {% assign current_year = article.date | date: '%Y' %}
+          {% if current_year != archive_year %}
+            {% unless forloop.first %}</section>{% endunless %}
+            <section>
+              <span class="fa listing-seperator"><span class="tag-text">{{ current_year }}</span></span>
+            {% assign archive_year = current_year %}
+          {% endif %}
+
+          <div class="post-preview item" data-tags="{{ encoded_tags }}">
+            <a href="{{ article.url | prepend: site.baseurl }}">
+              <h2 class="post-title">{{ article.title }}</h2>
+              {% if article.subtitle %}<h3 class="post-subtitle">{{ article.subtitle }}</h3>{% endif %}
+            </a>
+            <hr>
+          </div>
+          {% if forloop.last %}</section>{% endif %}
+        {% else %}
+          <p class="empty-post-list">{{ strings.no_posts }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -13,27 +13,32 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+                {% assign current_lang = page.lang | default: 'zh' %}
+                <a class="navbar-brand" href="{% if current_lang == 'en' %}{{ '/en/' | prepend: site.baseurl }}{% else %}{{ '/' | prepend: site.baseurl }}{% endif %}">{{ site.title }}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div id="huxblog_navbar">
                 <div class="navbar-collapse">
+                    {% assign current_lang = page.lang | default: 'zh' %}
+                    {% assign strings = site.data.i18n[current_lang] %}
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="{{ site.baseurl }}/">Home</a>
+                            <a href="{% if current_lang == 'en' %}{{ '/en/' | prepend: site.baseurl }}{% else %}{{ '/' | prepend: site.baseurl }}{% endif %}">{{ strings.nav_home }}</a>
                         </li>
-                        {% for page in site.pages %}
-                        {% if page.title and page.hide-in-nav != true %}
                         <li>
-                            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                            <a href="{% if current_lang == 'en' %}{{ '/en/archive/' | prepend: site.baseurl }}{% else %}{{ '/archive/' | prepend: site.baseurl }}{% endif %}">{{ strings.nav_archive }}</a>
                         </li>
-                        {% endif %}
-                        {% endfor %}
+                        <li>
+                            <a href="{% if current_lang == 'en' %}{{ '/en/about/' | prepend: site.baseurl }}{% else %}{{ '/about/' | prepend: site.baseurl }}{% endif %}">{{ strings.nav_about }}</a>
+                        </li>
                         <li class="search-icon">
                             <a href="javascript:void(0)">
                                 <i class="fa fa-search"></i>
                             </a>
+                        </li>
+                        <li class="language-switcher">
+                            {% include language-switch.html %}
                         </li>
                     </ul>
                 </div>

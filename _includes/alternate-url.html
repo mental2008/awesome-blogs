@@ -1,0 +1,38 @@
+{%- assign target_lang = include.lang -%}
+{%- assign matched_url = '' -%}
+{%- if page.translation_key -%}
+  {%- for candidate in site.pages -%}
+    {%- assign candidate_lang = candidate.lang | default: 'zh' -%}
+    {%- if candidate.translation_key == page.translation_key and candidate_lang == target_lang -%}
+      {%- assign matched_url = candidate.url -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if matched_url == '' -%}
+    {%- for candidate in site.posts -%}
+      {%- assign candidate_lang = candidate.lang | default: 'zh' -%}
+      {%- if candidate.translation_key == page.translation_key and candidate_lang == target_lang -%}
+        {%- assign matched_url = candidate.url -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if matched_url == '' -%}
+    {%- for candidate in site.en_posts -%}
+      {%- assign candidate_lang = candidate.lang | default: 'en' -%}
+      {%- if candidate.translation_key == page.translation_key and candidate_lang == target_lang -%}
+        {%- assign matched_url = candidate.url -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if matched_url != '' -%}
+  {{- matched_url | prepend: site.baseurl -}}
+{%- elsif include.fallback == true or include.fallback == 'true' -%}
+  {%- if target_lang == 'en' -%}
+    {{- '/en/?translation=unavailable' | prepend: site.baseurl -}}
+  {%- else -%}
+    {{- '/' | prepend: site.baseurl -}}
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,14 @@
+{%- assign current_lang = page.lang | default: 'zh' -%}
+{%- if current_lang == 'en' -%}
+  {%- assign target_lang = 'zh' -%}
+{%- else -%}
+  {%- assign target_lang = 'en' -%}
+{%- endif -%}
+{%- capture switch_url -%}{%- include alternate-url.html lang=target_lang fallback=true -%}{%- endcapture -%}
+{%- assign switch_url = switch_url | strip -%}
+<a class="language-switch" href="{{ switch_url }}" hreflang="{% if target_lang == 'en' %}en{% else %}zh-CN{% endif %}"
+   title="{{ site.data.i18n[current_lang].switch_language }}" aria-label="{{ site.data.i18n[current_lang].switch_language }}">
+  <span{% if current_lang == 'zh' %} class="active"{% endif %}>中文</span>
+  <span class="separator" aria-hidden="true">/</span>
+  <span{% if current_lang == 'en' %} class="active"{% endif %}>EN</span>
+</a>

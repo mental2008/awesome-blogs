@@ -20,19 +20,16 @@ layout: default
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <!-- Multi-Lingual -->
-                {% if page.multilingual %}
-                    {% include multilingual-sel.html %}
-                {% endif %}
-
 				{{ content }}
 
+                {% assign current_lang = page.lang | default: 'zh' %}
+                {% assign strings = site.data.i18n[current_lang] %}
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-                        Previous<br>
+                        {{ strings.previous }}<br>
                         <span>{{page.previous.title}}</span>
                         </a>
                     </li>
@@ -40,7 +37,7 @@ layout: default
                     {% if page.next.url %}
                     <li class="next">
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-                        Next<br>
+                        {{ strings.next }}<br>
                         <span>{{page.next.title}}</span>
                         </a>
                     </li>
@@ -73,7 +70,7 @@ layout: default
                 <div class="side-catalog">
                     <hr class="hidden-sm hidden-xs">
                     <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
+                        <a class="catalog-toggle" href="#">{{ strings.catalog }}</a>
                     </h5>
                     <ul class="catalog-body"></ul>
                 </div>

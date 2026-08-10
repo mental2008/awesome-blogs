@@ -1,8 +1,9 @@
 ---
 layout: null
+permalink: /en/search.json
 ---
 [
-  {% for post in site.posts %}
+  {% for post in site.en_posts %}
     {
       "title"    : "{{ post.title | escape }}",
       "subtitle" : "{{ post.subtitle | escape }}",

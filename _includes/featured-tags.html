@@ -3,26 +3,33 @@
 {% endcomment %}
 
 {% if site.featured-tags %}
+{% assign current_lang = page.lang | default: 'zh' %}
+{% assign strings = site.data.i18n[current_lang] %}
+{% if current_lang == 'en' %}
+    {% assign tag_posts = site.en_posts %}
+{% else %}
+    {% assign tag_posts = site.posts %}
+{% endif %}
+{% if tag_posts.size > 0 %}
 <section>
     {% if include.bottom %}
         <hr class="hidden-sm hidden-xs">
     {% endif %}
-    <h5><a href="{{'/archive/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+    <h5><a href="{% if current_lang == 'en' %}{{ '/en/archive/' | prepend: site.baseurl }}{% else %}{{ '/archive/' | prepend: site.baseurl }}{% endif %}">{{ strings.featured_tags }}</a></h5>
     <div class="tags">
-        {% capture tags %}
-        {% comment %}
-            there must be no space between for and if otherwise this tricky sort won't work.
-            url_encode/decode is for escaping otherwise extra <a> will get generated 
-            but it will break sort...
-        {% endcomment %}
-        {% for tag in site.tags %}{% if tag[1].size > site.featured-condition-size %}
-                <a data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" 
-                    href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}"
-                    title="{{ tag[0] }}"
-                    rel="{{ tag[1].size }}">{{ tag[0] }}</a>__SEPARATOR__
-        {% endif %}{% endfor %}
-        {% endcapture %}
-        {{ tags | split:'__SEPARATOR__' | sort }}
+        {% capture all_tag_names %}{% for article in tag_posts %}{% for tag in article.tags %}{{ tag }}__TAG_SEPARATOR__{% endfor %}{% endfor %}{% endcapture %}
+        {% assign unique_tags = all_tag_names | strip | split: '__TAG_SEPARATOR__' | uniq | sort %}
+        {% for tag in unique_tags %}
+            {% assign clean_tag = tag | strip %}
+            {% assign tag_count = 0 %}
+            {% for article in tag_posts %}{% if article.tags contains clean_tag %}{% assign tag_count = tag_count | plus: 1 %}{% endif %}{% endfor %}
+            {% if clean_tag != '' and tag_count > site.featured-condition-size %}
+                <a data-sort="{{ tag_posts.size | minus: tag_count | prepend: '0000' | slice: -4, 4 }}"
+                    href="{% if current_lang == 'en' %}{{ site.baseurl }}/en/archive/{% else %}{{ site.baseurl }}/archive/{% endif %}?tag={{ clean_tag | url_encode }}"
+                    title="{{ clean_tag }}" rel="{{ tag_count }}">{{ clean_tag }}</a>
+            {% endif %}
+        {% endfor %}
     </div>
 </section>
+{% endif %}
 {% endif %}

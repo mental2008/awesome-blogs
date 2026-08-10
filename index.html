@@ -1,8 +1,11 @@
 ---
 layout: page
 description: "「每一个不曾起舞的日子 都是对生命的辜负」"
+lang: zh
+translation_key: home
 ---
 
+{% assign strings = site.data.i18n.zh %}
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -23,7 +26,7 @@ description: "「每一个不曾起舞的日子 都是对生命的辜负」"
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        {{ strings.posted_by }} {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}，{{ strings.posted_on }} {{ post.date | date: "%Y 年 %-m 月 %-d 日" }}
     </p>
 </div>
 <hr>
@@ -34,12 +37,12 @@ description: "「每一个不曾起舞的日子 都是对生命的辜负」"
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; {{ strings.newer_posts }}</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ strings.older_posts }} &rarr;</a>
     </li>
     {% endif %}
 </ul>
