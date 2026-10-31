@@ -202,18 +202,49 @@ html[data-theme="dark"] .empty-post-list {
 
 html[data-theme="dark"] #tag_cloud a,
 html[data-theme="dark"] #tag_cloud .tag {
-  background: var(--theme-surface);
-  color: var(--theme-muted) !important;
+  /* Use dark frequency colors instead of the light inline palette. */
+  background: var(--tag-cloud-dark-background, var(--theme-surface)) !important;
+  border: 1px solid var(--theme-border);
+  color: var(--theme-text) !important;
+  transition: none;
 }
 
 html[data-theme="dark"] #tag_cloud a:hover,
 html[data-theme="dark"] #tag_cloud a:active,
-html[data-theme="dark"] #tag_cloud a.focus {
+html[data-theme="dark"] #tag_cloud a:focus-visible {
   background: var(--theme-raised) !important;
   color: var(--theme-accent) !important;
 }
 
-html[data-theme="dark"] #tag_cloud a.tag-button--all,
+html[data-theme="dark"] #tag_cloud a.focus {
+  background: var(--theme-accent) !important;
+  border-color: var(--theme-accent);
+  color: #14252c !important;
+}
+
+html[data-theme="dark"] .social-links a {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+html[data-theme="dark"] .social-links .fa-circle {
+  color: var(--theme-text);
+}
+
+html[data-theme="dark"] .social-links .fa-inverse {
+  color: var(--theme-background);
+}
+
+html[data-theme="dark"] .social-links a:hover .fa-circle,
+html[data-theme="dark"] .social-links a:focus-visible .fa-circle {
+  color: var(--theme-accent);
+}
+
+html[data-theme="dark"] .social-links a:focus-visible {
+  outline: 2px solid var(--theme-accent);
+  outline-offset: 3px;
+}
+
 html[data-theme="dark"] .listing-seperator,
 html[data-theme="dark"] .intro-header.style-text .tags a,
 html[data-theme="dark"] .intro-header.style-text .tags .tag {

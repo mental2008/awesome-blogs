@@ -18,6 +18,9 @@
     if (opts.color) {
       colorIncr = colorIncrement (opts.color, range);
     }
+    if (opts.darkColor) {
+      var darkColorIncr = colorIncrement(opts.darkColor, range);
+    }
     return this.each(function() {
       weighting = $(this).attr("rel") - lowest;
       if (opts.size) {
@@ -26,6 +29,9 @@
       if (opts.color) {
         // change color to background-color
         $(this).css({"backgroundColor": tagColor(opts.color, colorIncr, weighting)});
+      }
+      if (opts.darkColor && isFinite(weighting)) {
+        this.style.setProperty('--tag-cloud-dark-background', tagColor(opts.darkColor, darkColorIncr, weighting));
       }
     });
   };

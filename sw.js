@@ -24,6 +24,7 @@ const PRECACHE_LIST = [
   "./js/jquery.min.js",
   "./js/bootstrap.min.js",
   "./js/hux-blog.min.js",
+  "./js/jquery.tagcloud.js?v=2",
   "./js/snackbar.js",
 //   "./img/icon_wechat.png",
 //   "./img/avatar-hux.jpg",
@@ -32,7 +33,7 @@ const PRECACHE_LIST = [
   "./css/hux-blog.min.css",
   "./css/bootstrap.min.css",
   "./css/i18n.css?v=2",
-  "./css/theme.css?v=4",
+  "./css/theme.css?v=7",
   "./js/theme.js?v=2"
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css",
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3",
