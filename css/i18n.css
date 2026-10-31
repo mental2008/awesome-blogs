@@ -1,19 +1,67 @@
-.navbar-custom .nav li a.language-switch {
-  border: 1px solid currentColor;
+.navbar-custom .language-switch {
+  --switch-background: rgba(0, 133, 161, 0.06);
+  --switch-border: rgba(0, 133, 161, 0.2);
+  --switch-text: #40545b;
+  --switch-active-background: #00758e;
+  --switch-active-text: #fff;
+  --switch-hover: rgba(0, 133, 161, 0.1);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--switch-background);
+  border: 1px solid var(--switch-border);
   border-radius: 999px;
-  line-height: 16px;
-  margin: 14px 10px;
-  padding: 3px 9px;
+  margin: 12px 10px;
+  padding: 3px;
+  vertical-align: middle;
+}
+
+.navbar-custom .nav .language-switch .language-option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--switch-text);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  text-decoration: none;
   text-transform: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.language-switch .active {
-  font-weight: 900;
+.navbar-custom .nav .language-switch .language-option.is-active {
+  background: var(--switch-active-background);
+  color: var(--switch-active-text);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  font-weight: 700;
 }
 
-.language-switch .separator {
-  margin: 0 3px;
-  opacity: 0.55;
+.navbar-custom .nav .language-switch a.language-option:hover,
+.navbar-custom .nav .language-switch a.language-option:focus-visible {
+  background: var(--switch-hover);
+  color: var(--switch-text);
+}
+
+.navbar-custom .nav .language-switch a.language-option:focus-visible {
+  outline: 2px solid var(--switch-active-background);
+  outline-offset: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom:not(.invert):not(.is-fixed) .language-switch {
+    --switch-background: rgba(0, 0, 0, 0.2);
+    --switch-border: rgba(255, 255, 255, 0.4);
+    --switch-text: #fff;
+    --switch-active-background: #fff;
+    --switch-active-text: #26343b;
+    --switch-hover: rgba(255, 255, 255, 0.18);
+  }
 }
 
 .translation-notice,
@@ -30,8 +78,18 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .navbar-custom .nav li a.language-switch {
-    display: inline-block;
+  .navbar-custom .language-switch {
     margin: 6px 15px 12px;
+  }
+
+  .navbar-custom .nav .language-switch .language-option {
+    min-width: 48px;
+    height: 36px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar-custom .nav .language-switch .language-option {
+    transition: none;
   }
 }
