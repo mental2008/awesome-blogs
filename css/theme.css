@@ -2,6 +2,22 @@
   color-scheme: light;
 }
 
+.intro-header .post-heading .meta {
+  font-family: inherit;
+  font-style: normal;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.post-heading .reading-time {
+  white-space: nowrap;
+}
+
+.post-container a.footnote {
+  border-bottom: 0;
+  padding-bottom: 0;
+  text-decoration: none;
+}
+
 .navbar-custom .nav-preferences {
   display: flex;
   align-items: center;

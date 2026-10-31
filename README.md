@@ -13,6 +13,14 @@ $ bundler install
 $ bundler exec jekyll serve
 ```
 
+## Reading time
+
+Every post automatically shows its estimated reading time beside the author and
+date. It uses 400 Chinese characters or 200 English words per minute, combines
+both for mixed-language posts, and rounds up to at least one minute. Navigation,
+comments, footnotes, and code line numbers are excluded. No per-post metadata is
+needed.
+
 ## Bilingual content
 
 Chinese is the default language. English pages are published under `/en/`.

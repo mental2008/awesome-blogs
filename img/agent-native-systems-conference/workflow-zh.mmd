@@ -1,0 +1,22 @@
+flowchart TD
+    subgraph research["研究与验证"]
+        direction LR
+        A["研究：提出问题、核查结果"] <-.-> P["agent 辅助实现与实验"]
+    end
+    research --> B["投稿：选择会议，对照 CFP"]
+    B --> C["评审：同行确认初筛<br/>判断贡献与证据"]
+    C --> D{"程序委员会决策"}
+    D -->|录用| E["发表：定稿、交流与持续验证"]
+    D -->|拒稿| F["作者依据反馈修改并转投"]
+    F --> B
+    Q["agent 辅助初筛与审稿人匹配<br/>识别利益冲突、对比版本"] -.-> C
+    Q -.-> F
+    B ~~~ Q
+
+    style research fill:none,stroke:#94a3b8,color:#475569
+    classDef human fill:#e8f0fe,stroke:#2563eb,color:#172554
+    classDef agent fill:#e9f7ef,stroke:#15803d,color:#14532d
+    classDef stage fill:#f3f4f6,stroke:#6b7280,color:#111827
+    class A,C,D,F human
+    class P,Q agent
+    class B,E stage

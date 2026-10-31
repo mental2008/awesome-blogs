@@ -1,0 +1,22 @@
+flowchart TD
+    subgraph research["Research and validation"]
+        direction LR
+        A["Research: formulate questions,<br/>check results"] <-.-> P["Agents assist with<br/>implementation and experiments"]
+    end
+    research --> B["Submission: choose a conference,<br/>check against its CFP"]
+    B --> C["Review: peers confirm screening,<br/>assess contributions and evidence"]
+    C --> D{"Program committee decision"}
+    D -->|Accept| E["Publication: final paper,<br/>discussion and continuing validation"]
+    D -->|Reject| F["Authors revise based on feedback<br/>and submit elsewhere"]
+    F --> B
+    Q["Agents assist with screening,<br/>reviewer matching, conflict detection<br/>and version comparison"] -.-> C
+    Q -.-> F
+    B ~~~ Q
+
+    style research fill:none,stroke:#94a3b8,color:#475569
+    classDef human fill:#e8f0fe,stroke:#2563eb,color:#172554
+    classDef agent fill:#e9f7ef,stroke:#15803d,color:#14532d
+    classDef stage fill:#f3f4f6,stroke:#6b7280,color:#111827
+    class A,C,D,F human
+    class P,Q agent
+    class B,E stage

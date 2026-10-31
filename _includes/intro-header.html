@@ -45,7 +45,7 @@
                     <h1>{{ page.title }}</h1>
                     {% comment %} always create a h2 for keeping the margin {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
-                    <span class="meta">{{ strings.posted_by }} {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}{% if current_lang == 'en' %} {{ strings.posted_on }} {{ page.date | date: "%B %-d, %Y" }}{% else %}，{{ strings.posted_on }} {{ page.date | date: "%Y 年 %-m 月 %-d 日" }}{% endif %}</span>
+                    <span class="meta">{{ strings.posted_by }} {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}{% if current_lang == 'en' %} {{ strings.posted_on }} {{ page.date | date: "%B %-d, %Y" }}{% else %}，{{ strings.posted_on }} {{ page.date | date: "%Y 年 %-m 月 %-d 日" }}{% endif %}<span class="reading-time" data-reading-time-template="{{ strings.reading_time | escape }}" hidden></span></span>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
                     <h1>{{ page.title }}</h1>
                     {% comment %} always create a h2 for keeping the margin {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
-                    <span class="meta">{{ strings.posted_by }} {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}{% if current_lang == 'en' %} {{ strings.posted_on }} {{ page.date | date: "%B %-d, %Y" }}{% else %}，{{ strings.posted_on }} {{ page.date | date: "%Y 年 %-m 月 %-d 日" }}{% endif %}</span>
+                    <span class="meta">{{ strings.posted_by }} {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}{% if current_lang == 'en' %} {{ strings.posted_on }} {{ page.date | date: "%B %-d, %Y" }}{% else %}，{{ strings.posted_on }} {{ page.date | date: "%Y 年 %-m 月 %-d 日" }}{% endif %}<span class="reading-time" data-reading-time-template="{{ strings.reading_time | escape }}" hidden></span></span>
                 </div>
             </div>
         </div>
@@ -110,4 +110,8 @@
     </div>
   </div>
 </header>
+{% endif %}
+
+{% if include.type == 'post' or include.type == 'keynote' %}
+<script src="{{ '/js/reading-time.js' | prepend: site.baseurl }}?v=1" defer></script>
 {% endif %}
