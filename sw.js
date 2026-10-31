@@ -11,7 +11,7 @@
 // A namespace can prevent potential name conflicts and mis-deletion.
 const CACHE_NAMESPACE = 'main-'
 
-const CACHE = CACHE_NAMESPACE + 'precache-then-runtime-v2';
+const CACHE = CACHE_NAMESPACE + 'precache-then-runtime-v3';
 const PRECACHE_LIST = [
   "./",
   "./archive/",
@@ -31,7 +31,9 @@ const PRECACHE_LIST = [
   "./img/404-bg.jpg",
   "./css/hux-blog.min.css",
   "./css/bootstrap.min.css",
-  "./css/i18n.css?v=2"
+  "./css/i18n.css?v=2",
+  "./css/theme.css?v=4",
+  "./js/theme.js?v=1"
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css",
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3",
   // "//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"
@@ -42,7 +44,7 @@ const HOSTNAME_WHITELIST = [
   "yanshuo.io",
   "cdnjs.cloudflare.com"
 ]
-const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime', 'main-precache-then-runtime']
+const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime', 'main-precache-then-runtime', 'main-precache-then-runtime-v2']
 
 
 // The Util Function to hack URLs of intercepted requests
