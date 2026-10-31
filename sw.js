@@ -33,7 +33,7 @@ const PRECACHE_LIST = [
   "./css/bootstrap.min.css",
   "./css/i18n.css?v=2",
   "./css/theme.css?v=4",
-  "./js/theme.js?v=1"
+  "./js/theme.js?v=2"
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css",
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3",
   // "//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"

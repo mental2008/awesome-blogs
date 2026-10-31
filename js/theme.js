@@ -17,6 +17,7 @@
 
   function applyTheme() {
     var theme = preference || (systemTheme && systemTheme.matches ? 'dark' : 'light');
+    var previousTheme = root.getAttribute('data-theme');
     root.setAttribute('data-theme', theme);
 
     var meta = document.querySelector('meta[name="theme-color"]');
@@ -26,6 +27,12 @@
     if (button) {
       button.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
       button.setAttribute('title', button.getAttribute(theme === 'dark' ? 'data-label-light' : 'data-label-dark'));
+    }
+
+    // The embedded frame reads the page's colors when it loads.
+    if (previousTheme && previousTheme !== theme && document.querySelector('#disqus_thread') &&
+        window.DISQUS && typeof window.DISQUS.reset === 'function') {
+      window.DISQUS.reset({ reload: true });
     }
   }
 
