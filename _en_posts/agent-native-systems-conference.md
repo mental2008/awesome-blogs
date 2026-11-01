@@ -12,7 +12,7 @@ tags:
     - Systems Research
 ---
 
-When agents can help researchers quickly implement an idea, run experiments, and revise an approach based on the results, research communities have an opportunity to accumulate knowledge faster. An academic conference focused on a class of systems problems can use this capability to attract new participants, turn ideas that might otherwise remain untested into working prototypes, and evaluate different approaches under shared conditions.
+When agents can help researchers quickly implement an idea, run experiments, and revise an approach based on the results, research communities have an opportunity to accumulate knowledge faster. An academic conference focused on a class of systems problems can use this capability to attract new participants, turn ideas that might otherwise remain untested into working prototypes, and assess different approaches using the same evaluation criteria.
 
 Agents let researchers try more ideas and test them faster, helping a field advance more quickly. The value of research depends on the questions it asks, how its conclusions are validated, and the insights it produces. Yet agents also make papers easier to produce. As paper production accelerates, reviewers' time and attention are unlikely to increase at the same rate. If graduation, hiring, and promotion continue to depend heavily on publications at top conferences, greater research capacity may bring both more valuable discoveries and heavier reviewing workloads.
 
@@ -215,7 +215,7 @@ I hope an agent-native conference for systems research can bring together resear
 
 Agents can help us screen and match papers quickly so that authors receive feedback sooner. Researchers and reviewers must still take responsibility for papers and reviews. They must judge whether the research question matters, whether the evidence is reliable, and whether the contribution is valuable.
 
-I hope agents can free up more time and energy to explore the questions we consider most important. With new tools, more researchers may have an opportunity to revisit areas that were once difficult to enter, such as consistency and fault tolerance in distributed systems, or isolation and resource management in operating systems. Are existing designs already good enough? As technologies and applications change, what questions are worth revisiting? I hope more researchers will take up these questions and contribute new insights to systems research.
+This would free up more time and energy to explore the questions we consider most important. With new tools, more researchers may have an opportunity to revisit areas that were once difficult to enter, such as consistency and fault tolerance in distributed systems, or isolation and resource management in operating systems. Are existing designs already good enough? As technologies and applications change, what questions are worth revisiting? I hope more researchers will take up these questions and contribute new insights to systems research.
 
 A conference leaves behind more than proceedings. It also leaves a community that continues to exchange ideas and a body of work that others can test and improve. Each year's discussions can become the starting point for the next stage of research. Standing on the shoulders of those who came before us, we can see further.
 
