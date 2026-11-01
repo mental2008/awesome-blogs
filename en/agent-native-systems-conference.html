@@ -1,0 +1,18 @@
+---
+layout: null
+permalink: /en/agent-native-systems-conference/
+---
+{%- assign translated_post = site.en_posts | where: 'translation_key', 'agent-native-systems-conference' | first -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ translated_post.url | relative_url }}">
+  <link rel="canonical" href="{{ translated_post.url | absolute_url }}">
+  <meta name="robots" content="noindex">
+  <title>{{ translated_post.title | escape }}</title>
+</head>
+<body>
+  <p>This article has moved to <a href="{{ translated_post.url | relative_url }}">{{ translated_post.title | escape }}</a>.</p>
+</body>
+</html>

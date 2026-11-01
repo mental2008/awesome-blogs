@@ -250,7 +250,7 @@ tags:
 > 关注他人的优秀品质，期望他们愉悦友善，并且耐心地承认友谊的建立需要花费时间——你就可能会享有与他人更有价值的交往。
 
 ### 爱情
-> 在20世纪末，绝大多数的美国年轻人认为浪漫爱情是婚姻的必需条件（Simpson et al.，1986）。
+> 在 20 世纪末，绝大多数的美国年轻人认为浪漫爱情是婚姻的必需条件（Simpson et al.，1986）。
 > 
 > “Simpson, J.A., Campbell, B., & Berscheid, E. (1986). The association between romantic love and marriage: Kephart (1967) twice revisited. Personality and Social Psychology Bulletin, 12, 363–372.”
 
@@ -377,7 +377,7 @@ tags:
 
 > 女性通常是新的亲密关系中决定何时开始性行为的“看门人”。
 
-> 一项对德国60多岁的老年夫妻研究发现，没有任何一个妻子能满足丈夫想要的性行为次数（Klusmann，2006）。
+> 一项对德国 60 多岁的老年夫妻研究发现，没有任何一个妻子能满足丈夫想要的性行为次数（Klusmann，2006）。
 > 
 > “Klusmann, D. (2006). Sperm competition and female procurement of male resources. Human Nature, 17, 283300.”
 

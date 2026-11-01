@@ -24,12 +24,15 @@ needed.
 ## Bilingual content
 
 Chinese is the default language. English pages are published under `/en/`.
+English post URLs add `/en` before the Chinese post path, for example
+`/en/2026/11/01/agent-native-systems-conference/`.
 
 To add an English translation for a post:
 
 1. Add a stable `translation_key` to the Chinese post's front matter.
 2. Create `_en_posts/<slug>.md` with the same `translation_key`, plus `title`,
-   `date`, `author`, and any other post metadata. The `lang: en` and
+   `date`, `author`, and any other post metadata. Use the same date and slug as
+   the Chinese post so their URLs match apart from `/en`. The `lang: en` and
    `layout: post` values are supplied automatically.
 3. Write the English content in that file. It will appear automatically on the
    English home, archive, search, and language switcher.

@@ -47,7 +47,7 @@ plugins:
 collections:
   en_posts:
     output: true
-    permalink: /en/:name/
+    permalink: /en/:year/:month/:day/:name/
     sort_by: date
 
 defaults:
