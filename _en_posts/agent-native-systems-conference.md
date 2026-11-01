@@ -36,7 +36,7 @@ Therefore, **the CFP should state its core questions, scope boundaries, accepted
 
 ## What peer review should judge
 
-Peer review assesses each submission against the conference's research priorities and published criteria. Reviewers should have the relevant expertise and no conflicts of interest. Their reasons for recommending acceptance, revision, or rejection should be based on the manuscript and evidence submitted in the current round. SOSP's public review criteria[^sosp-2026] include novelty, significance, relevance, clarity, and correctness. These criteria cover both the value of the contribution and the soundness of its technical arguments.
+Peer review assesses each submission against the conference's research priorities and published criteria. Reviewers should have the relevant expertise and no conflicts of interest. Their reasons for recommending acceptance, revision, or rejection should be based on the paper and evidence submitted in the current round. SOSP's public review criteria[^sosp-2026] include novelty, significance, relevance, clarity, and correctness. These criteria cover both the value of the contribution and the soundness of its technical arguments.
 
 Review has another role that acceptance decisions can obscure: **communicating the community's understanding of good research to authors**. Specific evaluations and discussions help authors understand why peers value a question, what evidence supports a claim, and which design trade-offs need explanation. This feedback can improve the current paper and guide researchers toward more valuable questions in their next project. These expectations should apply whether or not authors use agents.
 
@@ -55,7 +55,7 @@ To uphold quality standards, conferences need to explain how an individual paper
 
 In *The Three Golden Rules for Successful Scientific Research*,[^dijkstra-golden-rules] Edsger W. Dijkstra offers three suggestions for choosing research problems: (1) raise your quality standards, avoid spending all your time on routine problems, and challenge the limits of your abilities; (2) when social relevance and scientific rigor cannot both be achieved, prioritize reliable research; and (3) if you are confident that peers with abilities and resources at least equal to yours are working on, or are about to work on, the same problem, avoid duplicating that effort and find a direction where you can make a distinctive contribution.
 
-These suggestions also inform how I think conferences should assess research. Is the problem worth attention? Are the conclusions reliable? What new understanding does the work offer relative to existing research? These questions deserve particular care when agents can implement ideas, run experiments, and draft manuscripts much faster.
+These suggestions also inform how I think conferences should assess research. Is the problem worth attention? Are the conclusions reliable? What new understanding does the work offer relative to existing research? These questions deserve particular care when agents can implement ideas, run experiments, and draft papers much faster.
 
 | Review dimension | Questions reviewers need to answer |
 | --- | --- |
@@ -95,7 +95,7 @@ The health of a conference's community should be judged by more than submission 
 
 ## What faster research means for reviewing pressure
 
-Agents help researchers produce manuscripts faster and reduce the cost of revision and resubmission. If graduation, hiring, or promotion depends on the number of top-conference papers, this added capacity may turn into more submissions.
+Agents help researchers produce papers faster and reduce the cost of revision and resubmission. If graduation, hiring, or promotion depends on the number of top-conference papers, this added capacity may turn into more submissions.
 
 A more immediate concern is that researchers may copy agent-generated arguments, code, or experimental results into papers without understanding or checking them. An apparently complete experimental analysis may fail to address what matters in the target setting; a graph may show results from an actual experiment yet use an inappropriate baseline. The behavior to guard against is **using outputs without judgment and validation**. Agent use itself should not be treated as a problem. Research completed without agents must pass the same checks.
 
@@ -105,7 +105,7 @@ These incentives create institutional inertia. A Chinese saying about the many p
 
 ### Judge paper quality, not acceptance rates
 
-Submitting and revising papers is becoming easier, while checking their value and evidence still takes peers' time. More attempts may yield new discoveries, but they may also produce manuscripts that lack adequate judgment and validation. Under these conditions, conferences need to maintain rigorous quality standards.
+Submitting and revising papers is becoming easier, while checking their value and evidence still takes peers' time. More attempts may yield new discoveries, but they may also produce papers that lack adequate judgment and validation. Under these conditions, conferences need to maintain rigorous quality standards.
 
 When submission volume rises because research tools improve, conferences may feel pressure to maintain their historical acceptance rates. I believe **the acceptance rate should be an outcome of review, not a target that determines how many papers are accepted**. Standards should not be lowered to accept papers that would otherwise fall short merely to keep the ratio at a particular level.
 
@@ -127,7 +127,7 @@ New members can first complete independent reviews and then discuss their reason
 
 ## Bringing agents into research and review
 
-As the way research is done changes, I propose a conference process that covers submission, review, and version management. It would check CFP fit early, retain the manuscript version from each submission, help reviewers locate relevant evidence, and reduce repeated reading so that experts can spend more time on questions that require deeper judgment.
+As the way research is done changes, I propose a conference process that covers submission, review, and version management. It would check CFP fit early, keep a copy of each submitted version of the paper, help reviewers locate relevant evidence, and reduce repeated reading so that experts can spend more time on questions that require deeper judgment.
 
 The diagram below summarizes the proposed research and publication process. Blue indicates researchers' and peers' judgments or actions, green indicates agent assistance, and gray indicates process stages.
 
@@ -145,15 +145,15 @@ These expectations concern research content and author responsibility, and apply
 
 ### Use agents to screen submissions and give early feedback on CFP fit
 
-Once the CFP is clear, the conference needs to give authors prompt feedback: does the manuscript fit the scope, and do the question and contribution warrant full review? I suggest that **conferences return screening decisions and specific reasons within one to two weeks of submission**.
+Once the CFP is clear, the conference needs to give authors prompt feedback: does the paper fit the scope, and do the question and contribution warrant full review? I suggest that **conferences return screening decisions and specific reasons within one to two weeks of submission**.
 
 A two-page abstract that explains the work on its own can give reviewers enough context for an initial assessment: does the work address the conference's research priorities, is the question worth investigating, and does the core contribution merit further review? It should explain the motivation, shortcomings of existing methods, central idea, and initial results so that peers can understand what the authors are trying to solve. ATC 2026's extended abstract guidelines[^atc-2026-abstract] offer a useful writing reference.
 
-Screening decisions should have explicit reasons. After a paper passes screening, reviewers must still read the full text and examine the design, experiments, and conclusions. Work spanning fields or exploring new directions that are easily misunderstood should also be checked by peers familiar with the relevant questions. ASPLOS 2027's rapid review[^asplos-2027] offers a reference: reviewers read the first two pages of the main text, assess how the work advances the conference's core research areas and whether the PC has the expertise to review it, and return manuscripts early if the PC lacks sufficient expertise.
+Screening decisions should have explicit reasons. After a paper passes screening, reviewers must still read the full text and examine the design, experiments, and conclusions. Work spanning fields or exploring new directions that are easily misunderstood should also be checked by peers familiar with the relevant questions. ASPLOS 2027's rapid review[^asplos-2027] offers a reference: reviewers read the first two pages of the main text, assess how the work advances the conference's core research areas and whether the PC has the expertise to review it, and return submissions early if the PC lacks sufficient expertise.
 
-To complete screening promptly under high submission volume and limited reviewer time, I believe **this process must include agent assistance**. Based on the current public CFP and the two-page abstract or other required screening materials, an agent would summarize the research question and contribution, offer a preliminary judgment of "within scope," "possibly out of scope," or "needs clarification," and list the relevant passages in the CFP, locations in the manuscript, and reasons for its assessment.
+To complete screening promptly under high submission volume and limited reviewer time, I believe **this process must include agent assistance**. Based on the current public CFP and the two-page abstract or other required screening materials, an agent would summarize the research question and contribution, offer a preliminary judgment of "within scope," "possibly out of scope," or "needs clarification," and list the relevant passages in the CFP, locations in the paper, and reasons for its assessment.
 
-Each conference could also provide an author-facing submission tool integrated into a system such as HotCRP. After authors upload a manuscript, an agent would read it, identify its research questions, methods, and contributions, and relate them to the current CFP to flag possible scope mismatches or points needing clarification, citing the relevant passages in the CFP and manuscript. Authors would no longer need to select research areas manually. If the agent misunderstood the work, they could revise the wording, add an explanation, or reconsider the submission venue.
+Each conference could also provide an author-facing submission tool integrated into a system such as HotCRP. After authors upload a paper, an agent would read it, identify its research questions, methods, and contributions, and relate them to the current CFP to flag possible scope mismatches or points needing clarification, citing the relevant passages in the CFP and paper. Authors would no longer need to select research areas manually. If the agent misunderstood the work, they could revise the wording, add an explanation, or reconsider the submission venue.
 
 The same analysis of a paper's content could also help match it with reviewers. Conferences could require each author to maintain and link at least one verifiable academic profile, such as ORCID, Google Scholar, or OpenReview; reviewers would provide similar profiles and indicate how many papers they could review. Based on the paper's questions and methods, together with the research experience and expertise in those profiles, an agent would recommend and assign suitable peers from the conference's selected reviewer pool, explaining the match. Work across fields could be assigned reviewers from different areas without being forced into a single author-selected category.
 
@@ -179,9 +179,9 @@ Knowing a paper's submission history can affect a reviewer's judgment. If review
 
 In a randomized experiment conducted in 2020,[^prior-and-prejudice] Stelmakh and colleagues asked 133 novice reviewers to evaluate 19 papers. Reviewers who were told in advance that a paper had been rejected by a similar conference gave it an overall score that was, on average, 0.78 points lower on a ten-point scale. The 95% confidence interval for this decrease was 0.24 to 1.30 points.
 
-One approach worth testing separates checks for compliance with submission rules from the initial assessment of the research. Authorized chairs would first check submission history and overlapping review periods. Reviewers would record an independent initial assessment of the current manuscript before seeing the relevant summaries of changes and unresolved issues. OSDI 2027[^osdi-2027] and SOSP 2026[^sosp-2026] already show resubmission statements only after reviews have been completed.
+One approach worth testing separates checks for compliance with submission rules from the initial assessment of the research. Authorized chairs would first check submission history and overlapping review periods. Reviewers would record an independent initial assessment of the paper submitted in the current round before seeing the relevant summaries of changes and unresolved issues. OSDI 2027[^osdi-2027] and SOSP 2026[^sosp-2026] already show resubmission statements only after reviews have been completed.
 
-Earlier reviews can identify technical issues worth continuing to address, and authors should explain why they did not adopt a specific suggestion. For disputed manuscripts, peers who did not participate in the previous round can be invited to review the work.
+Earlier reviews can identify technical issues worth continuing to address, and authors should explain why they did not adopt a specific suggestion. For disputed papers, peers who did not participate in the previous round can be invited to review the work.
 
 ### Sharing submission information across conferences and establishing a submission ban policy
 
